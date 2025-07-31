@@ -1,0 +1,138 @@
+{
+  "name": "convert-css-units",
+  "displayName": "Convert CSS Units",
+  "description": "Easily convert CSS px values to responsive units with keyboard shortcuts and smart conversion",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "px",
+    "vw",
+    "vh",
+    "vmin",
+    "vmax",
+    "cqw",
+    "cqh",
+    "viewport",
+    "px to rem",
+    "px to em",
+    "px to vw",
+    "px to vh",
+    "px to vmin",
+    "px to vmax",
+    "px to cqw",
+    "px to cqh"
+  ],
+  "activationEvents": [],
+  "publisher": "cukehater",
+  "icon": "icon.png",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/cukehater/convert-css-units"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "CSS Unit Converter",
+        "properties": {
+          "convertCSSUnits.unit": {
+            "type": "string",
+            "default": "rem",
+            "description": "Select the unit to convert px",
+            "enum": [
+              "rem",
+              "em",
+              "vw",
+              "vh",
+              "vmin",
+              "vmax",
+              "cqw",
+              "cqh"
+            ]
+          },
+          "convertCSSUnits.baseFontSize": {
+            "type": "number",
+            "default": 16,
+            "description": "em/rem conversion base font size (px)",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "convertCSSUnits.baseWidth": {
+            "type": "number",
+            "default": 1920,
+            "description": "vw/cqw conversion base width (px)",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "convertCSSUnits.baseHeight": {
+            "type": "number",
+            "default": 1080,
+            "description": "vh/cqh conversion base height (px)",
+            "minimum": 1,
+            "maximum": 10000
+          }
+        }
+      }
+    ],
+    "commands": [
+      {
+        "command": "convertCSSUnits.setUnit",
+        "title": "Set Unit",
+        "category": "Convert CSS Units"
+      },
+      {
+        "command": "convertCSSUnits.setBaseFontSize",
+        "title": "Set Base Font Size (px)",
+        "category": "Convert CSS Units"
+      },
+      {
+        "command": "convertCSSUnits.setBaseWidth",
+        "title": "Set Base Width (px)",
+        "category": "Convert CSS Units"
+      },
+      {
+        "command": "convertCSSUnits.setBaseHeight",
+        "title": "Set Base Height (px)",
+        "category": "Convert CSS Units"
+      },
+      {
+        "command": "convertCSSUnits.convert",
+        "title": "Convert Selected px",
+        "category": "Convert CSS Units"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "convertCSSUnits.convert",
+        "key": "alt+z",
+        "mac": "alt+z"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
