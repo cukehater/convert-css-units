@@ -2,13 +2,11 @@
   "name": "convert-css-units",
   "displayName": "Convert CSS Units",
   "description": "Easily convert CSS px values to responsive units with keyboard shortcuts and smart conversion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Formatters",
-    "Snippets",
     "Other"
   ],
   "keywords": [
@@ -19,6 +17,7 @@
     "vmax",
     "cqw",
     "cqh",
+    "rpx",
     "viewport",
     "px to rem",
     "px to em",
