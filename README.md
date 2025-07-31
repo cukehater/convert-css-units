@@ -1,4 +1,4 @@
-# Covert CSS Units
+# Convert CSS Units
 
 Easily convert CSS px values to responsive units with keyboard shortcuts and smart conversion
 
@@ -50,20 +50,20 @@ Customize the extension in your VSCode `settings.json`
 1. **Select px value** in your CSS file
 2. **Press `Alt + Z`** to convert to the configured unit
 3. **Use commands** to change conversion settings:
-   - `Covert CSS Units: Set Unit`
-   - `Covert CSS Units: Set Base Font Size (px)`
-   - `Covert CSS Units: Set Base Width (px)`
-   - `Covert CSS Units: Set Base Height (px)`
+   - `Convert CSS Units: Set Unit`
+   - `Convert CSS Units: Set Base Font Size (px)`
+   - `Convert CSS Units: Set Base Width (px)`
+   - `Convert CSS Units: Set Base Height (px)`
 
 ## 🔧 Commands
 
-| Command                                 | Description                        |
-| --------------------------------------- | ---------------------------------- |
-| `Covert CSS Units: Convert Selected px` | Convert selected px to target unit |
-| `Covert CSS Units: Set Unit`            | Change target conversion unit      |
-| `Covert CSS Units: Set Base Font Size`  | Configure base font size           |
-| `Covert CSS Units: Set Base Width`      | Configure base width               |
-| `Covert CSS Units: Set Base Height`     | Configure base height              |
+| Command                                  | Description                        |
+| ---------------------------------------- | ---------------------------------- |
+| `Convert CSS Units: Convert Selected px` | Convert selected px to target unit |
+| `Convert CSS Units: Set Unit`            | Change target conversion unit      |
+| `Convert CSS Units: Set Base Font Size`  | Configure base font size           |
+| `Convert CSS Units: Set Base Width`      | Configure base width               |
+| `Convert CSS Units: Set Base Height`     | Configure base height              |
 
 ## 📝 Examples
 

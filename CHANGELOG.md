@@ -20,7 +20,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Support for batch conversion of multiple px values
 - Enhanced conversion accuracy and edge case handling
 
-## [0.0.1] - 2025-01-01
+## [0.0.1] - 2025-07-31
 
 ### Added
 
@@ -29,3 +29,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Configuration system for conversion parameters
 - Keyboard shortcut integration
 - VS Code extension structure and TypeScript implementation
+
+## [0.0.2] - 2025-07-31
+
+### Changed
+
+- Update README.md
